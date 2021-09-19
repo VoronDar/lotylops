@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="60dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textSize="25dp"
+        android:fontFamily="@font/heebo_black"
+        android:text="Проверка обновлений"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <ImageView
+        android:id = "@+id/pct"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="50dp"
+        android:src = "@drawable/ic_loty_lopi"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id = "@+id/loading_progress"
+        android:textSize="20sp"
+        android:text="загрузка"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBlueApp"
+        android:alpha="0.6"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/heebo_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voc_load" />
+
+    <ImageView
+        android:id = "@+id/voc_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/section_start1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="48dp"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toStartOf="@id/phr_load"
+        app:layout_constraintTop_toBottomOf="@id/name_loading" />
+    <ImageView
+        android:id = "@+id/phr_load"
+        android:layout_width="0dp"
+        android:alpha="0.2"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/section_start2"
+        app:layout_constraintStart_toEndOf="@id/voc_load"
+        app:layout_constraintEnd_toStartOf="@id/gr_load"
+        app:layout_constraintTop_toBottomOf="@id/name_loading" />
+    <ImageView
+        android:id = "@+id/gr_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/section_start3"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toStartOf="@id/ex_load"
+        app:layout_constraintStart_toEndOf="@id/phr_load"
+        app:layout_constraintTop_toBottomOf="@id/name_loading" />
+    <ImageView
+        android:id = "@+id/ex_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/section_start4"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toStartOf="@id/cul_load"
+        app:layout_constraintStart_toEndOf="@id/gr_load"
+        app:layout_constraintTop_toBottomOf="@id/name_loading" />
+    <ImageView
+        android:id = "@+id/cul_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/section_start5"
+        android:alpha="0.2"
+        app:layout_constraintEnd_toStartOf="@id/ph_load"
+        app:layout_constraintStart_toEndOf="@id/ex_load"
+        app:layout_constraintTop_toBottomOf="@id/name_loading" />
+    <ImageView
+        android:id = "@+id/ph_load"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/section_start6"
+        android:alpha="0.2"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cul_load"
+        app:layout_constraintTop_toBottomOf="@id/name_loading" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

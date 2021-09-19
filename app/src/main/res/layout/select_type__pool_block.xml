@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_margin = "10dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    app:cardCornerRadius="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="20dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_translate_native" />
+        <TextView
+            android:id="@+id/command"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor = "@color/colorDarkBlueApp"
+            android:textSize = "20dp"
+            android:text = "Аудирование"
+            android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/cardsCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor = "@color/colorBlueApp"
+                    android:gravity="center"
+                    android:textSize = "20dp"
+                    android:text = "10 кард"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

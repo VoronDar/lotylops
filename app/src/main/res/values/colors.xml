@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D71B8</color>
+    <color name="colorPrimaryDark">#1D71B8</color>
+    <color name="colorAccent">#E06F98</color>
+    <color name="colorOrange">#BA6940</color>
+    <color name="colorLightOrange">#C7B4AC</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteMeaning">#444044</color>
+    <color name="colorWhiteTranslate">#1B171B</color>
+    <color name="colorWhiteSynonym">#656365</color>
+    <color name="colorLightGray">#B2B0B2</color>
+    <color name="colorWhiteExample">#47517C</color>
+    <color name="colorBlue">#856fff</color>
+    <color name="colorWhiteRight">#1D71B8</color>
+    <color name="colorWhiteBackground">#f7f7f7</color>
+    <color name="colorBlueStat">#969cff</color>
+    <color name="colorEmphtaGrey">#C4C8F5</color>
+    <color name="colorLightGrey">#E0E0EB</color>
+    <color name="colorBlueApp">#1D71B8</color>
+    <color name="colorBlueAlphaApp">#1F3C3F41</color>
+    <color name="colorLightBlueApp">#88C3F1</color>
+    <color name="colorBackBlueApp">#E5ECF1</color>
+    <color name="colorDarkBlueApp">#3B6585</color>
+    <color name="colorDark2BlueApp">#326BA2</color>
+    <color name="colorBackLightBlueApp">#E3EDF7</color>
+    <color name="colorBackPers">#faf8f6</color>
+    <color name="colorRedApp">#D54848</color>
+    <color name="colorGameCard">#A4C7E0</color>
+    <color name="colorGameText">#517DD2</color>
+    <color name="colorGameRightText">#6ACD98</color>
+    <color name="colorGameWrongText">#FF5C70</color>
+    <color name="colorWrongGameCard">#F7A4C3</color>
+    <color name="colorRightGameCard">#96DD98</color>
+
+    <color name="buttonBackground">#6496F6</color>
+    <color name="outlinedButtonColor">#457CE7</color>
+    <color name="buttonStroke">#666DA8FF</color>
+    <color name="buttonStrokeSelect">#80AB8989</color>
+    <color name="cardCloser">#6DA8FF</color>
+
+    <color name="buttonRightBackground">#9ABCFE</color>
+    <color name="buttonRightColour">#2D5CB7</color>
+    <color name="buttonWrongBackground">#FFD4D4</color>
+    <color name="buttonWrongColour">#580B0B</color>
+
+    <color name="textGroup">#4D6C9A</color>
+    <color name="textTranscript">#455470</color>
+
+    <color name="textTrain">#3D7FFF</color>
+    <color name="textTrainInner">#6F92D8</color>
+    <color name="textTrainInnerBack">#1CE1E4FF</color>
+    <color name="textSelectInnerBack">#E8EAFF</color>
+
+    <color name="colorMenuLabel">#B3000000</color>
+
+    <color name = "backCul">#C06BE9</color>
+    <color name = "backPhon">#9676F1</color>
+    <color name = "backPhr">#618DFF</color>
+    <color name = "backVoc">#51AFFF</color>
+    <color name = "backGram">#48C0DA</color>
+    <color name = "backExc">#41BB9E</color>
+
+    <color name = "backNameVoc">#6496F6</color>
+    <color name = "backNamePhr">#4E6AFF</color>
+    <color name = "backNameGram">#31AAC5</color>
+    <color name = "backNameExc">#2F74B4</color>
+    <color name = "backNamePhon">#8D53A1</color>
+    <color name = "backNameCul">#B13EB4</color>
+
+
+    <color name = "backTextVoc">#09467A</color>
+    <color name = "backTextPhr">#1A20A6</color>
+    <color name = "backTextGram">#09587A</color>
+    <color name = "backTextExc">#076257</color>
+    <color name = "backTextPhon">#430B9E</color>
+    <color name = "backTextCul">#78097A</color>
+
+    <color name = "backTextBackVoc">#80BFE2FF</color>
+    <color name = "backTextBackPhr">#80D4D6FF</color>
+    <color name = "backTextBackGram">#80A0FFFF</color>
+    <color name = "backTextBackExc">#80B2FFED</color>
+    <color name = "backTextBackPhon">#80CCA4FE</color>
+    <color name = "backTextBackCul">#80E1AAE2</color>
+
+
+    <color name = "sliderToday">#329BF4</color>
+    <color name = "sliderExp">#61E3FF</color>
+
+
+</resources>

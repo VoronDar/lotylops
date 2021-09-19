@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop= "30dp"
+    android:paddingBottom="30dp"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id = "@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueApp"
+        android:padding = "12dp"
+        android:textAlignment="center"
+        android:textSize = "30dp"
+        android:textColor="@color/colorWhite"
+        android:text = "поделиться картой"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <TextView
+        android:id = "@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity = "center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize = "20dp"
+        android:textColor="@color/colorDarkBlueApp"
+        android:text = "Ты можешь отправить карту слова на сервер, чтобы другие люди тоже могли изучать это слово. После проверки карты ты получишь вознаграждение :)"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <Button
+        style="@style/newButton"
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:onClick="goNext"
+        android:layout_marginRight="10dp"
+        android:stateListAnimator="@null"
+        android:text="@string/cancel"
+        android:textColor = "@color/colorWhiteSynonym"/>
+        <Button
+            style="@style/newButton"
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:onClick="goNext"
+            android:stateListAnimator="@null"
+            android:text="@string/add" />
+</LinearLayout>
+
+</LinearLayout>

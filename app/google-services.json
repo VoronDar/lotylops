@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "159615693746",
+    "firebase_url": "https://langua-eng.firebaseio.com",
+    "project_id": "langua-eng",
+    "storage_bucket": "langua-eng.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159615693746:android:be18e1904d08a3b66beaab",
+        "android_client_info": {
+          "package_name": "com.example.langua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159615693746-dssualld3enaddalsqfkms8oqagqsgs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4TAYASejINgePyPXpBBno57MdTdR6tKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159615693746-dssualld3enaddalsqfkms8oqagqsgs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159615693746:android:0c504ea8703a23136beaab",
+        "android_client_info": {
+          "package_name": "com.lya_cacoi.lotylops"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159615693746-dssualld3enaddalsqfkms8oqagqsgs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4TAYASejINgePyPXpBBno57MdTdR6tKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159615693746-dssualld3enaddalsqfkms8oqagqsgs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

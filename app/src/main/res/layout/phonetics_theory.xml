@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragmentBack"
+    android:id = "@+id/parentLayout"
+    android:gravity="top"
+tools:context="activities.MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        style = "@style/cardM"
+        app:contentPadding="0dp"
+        android:id = "@+id/cardView"
+        app:cardCornerRadius="3dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/colorWhite">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/theory"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="звук "
+                            android:layout_marginBottom="40dp"
+                            android:textColor="@color/colorWhiteTranslate"
+                            android:textSize="32sp" />
+
+
+                <ScrollView
+                    android:overScrollMode="never"
+                    android:id="@+id/cardScroll"
+                    android:layout_margin="8dp"
+                    android:scrollbars = "none"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="11111">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/theory_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Глагол to be дословно прошедшем и будущем времсения вроде `я есть сонный`, `она есть здесь`, но в английском глагол to be не опускается никогда.\n Глагол to be изменяется по числам, лицам и временам. "
+
+                    android:textColor="@color/colorWhiteMeaning"
+                    android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="16dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/divider" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:overScrollMode="never"
+                    android:id = "@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_margin="16dp"
+                    />
+                    </LinearLayout>
+                </ScrollView>
+                        <LinearLayout
+                            android:id = "@+id/checkRemember"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:padding = "12dp"
+                            android:layout_alignParentBottom="true"
+                            android:weightSum="2">
+
+                            <Button
+                                style="@style/newButton"
+                                android:id = "@+id/buttonForget"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:text="@string/no"/>
+
+                            <Button
+                                style="@style/newButton"
+                                android:id = "@+id/buttonRemember"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:text="@string/yes"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id = "@+id/layout_next"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:layout_alignParentBottom="true">
+
+                            <Button
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRemember"
+                                android:background="@color/colorWhite"
+                                android:text="next"/>
+                    </LinearLayout>
+                    </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

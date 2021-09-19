@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="10dp"
+    android:visibility="gone"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="#00000000"
+    android:id = "@+id/infoPanel"
+    app:contentPaddingBottom="80dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id = "@+id/infoCardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/heebo_black"
+        android:textSize="24dp"
+        android:text = "поле слово"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_horizontal" />
+        <ImageView
+            android:id = "@+id/infoCardImage"
+            android:layout_width="match_parent"
+            android:src = "@drawable/icon_mem"
+            android:visibility="gone"
+            android:layout_height="200dp"/>
+        <TextView
+            android:id = "@+id/infoCardDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/heebo_regular"
+            android:textSize="20dp"
+            android:text = "Означает бла бла бла и бла бла бла"
+            android:textColor="@color/colorBlack"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:id = "@+id/infoCardButton"
+            style = "@style/buttonSecond"
+            android:layout_marginTop="50dp"
+            android:text="Ок"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id = "@+id/cancelInfoButton"
+            style = "@style/buttonSecond"
+            android:visibility="gone"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:text="Отмена"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragmentBack"
+    android:gravity="top"
+    tools:context="activities.testTranslate">
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        style = "@style/cardM"
+        app:contentPadding="0dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="3dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite">
+
+
+        <ScrollView
+            android:overScrollMode="never"
+            android:id = "@+id/testScroll"
+            android:scrollbars = "none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="14">
+
+            <TextView
+                android:id="@+id/part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorBlueApp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text = "@string/write_the_sentence"
+                android:textColor="@color/colorWhite"
+                android:textSize="23sp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="example example example example"
+                android:textColor="@color/colorWhiteTranslate"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/sentence"
+                android:textColor = "@color/colorWhiteExample"
+                android:background="@color/colorLightGrey"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blocks"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                style="@style/newButton"
+                android:id="@+id/skip"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                android:stateListAnimator="@null"
+                android:text="@string/skip" />
+            <Button
+                style="@style/newButton"
+                android:id="@+id/check"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlueApp"
+                android:background="@color/colorWhite"
+                android:text="@string/check" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

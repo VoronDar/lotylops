@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop= "30dp"
+    android:paddingBottom="10dp"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id = "@+id/errorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:textColor="@color/colorWhiteSynonym"
+        android:text = "Ошибка загрузки звука"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <Button
+        style="@style/newButton"
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:onClick="goNext"
+        android:stateListAnimator="@null"
+        android:text="ok" />
+
+</LinearLayout>

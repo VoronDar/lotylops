@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="10dp"
+    android:visibility="gone"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="#00000000"
+    android:id = "@+id/errorPanel"
+    app:contentPaddingBottom="80dp"
+    android:layout_height="0dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/heebo_black"
+        android:textSize="20dp"
+        android:text = "Ваш ответ:"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorBlack"
+        android:gravity="center_horizontal" />
+
+        <TextView
+            android:id = "@+id/yourAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/heebo_bold"
+            android:textSize="20dp"
+            android:text = "I feel good"
+            android:layout_marginBottom="30dp"
+            android:textColor="#4E648F"
+            android:gravity="center_horizontal" />
+
+        <View
+            style="@style/divider"
+            app:layout_constraintTop_toBottomOf="@id/cards"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/heebo_black"
+            android:textSize="20dp"
+            android:text = "Правильный вариант:"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id = "@+id/rightAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/heebo_bold"
+            android:textSize="20dp"
+            android:text = "I want hugs"
+            android:layout_marginBottom="0dp"
+            android:textColor="#3D7FFF"
+            android:gravity="center_horizontal" />
+
+
+        <TextView
+            android:id = "@+id/infoAnswer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/heebo_regular"
+            android:textSize="18dp"
+            android:text = "Означает бла бла бла и бла бла бла"
+            android:textColor="#607CB0" />
+        <Button
+            android:id = "@+id/errorCardButton"
+            style = "@style/buttonSecond"
+            android:layout_marginTop="50dp"
+            android:text="Ок"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </ScrollView>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingTop= "30dp"
+    android:paddingBottom="30dp"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id = "@+id/errorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:textColor="@color/colorWhiteSynonym"
+        android:text = "@string/add_mem"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <TextView
+        android:id = "@+id/association"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity = "center"
+        android:textSize = "20dp"
+        android:textColor="@color/colorWhiteExample"
+        android:text = "Блаблабла"
+        />
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/divider" />
+    <EditText
+        android:id = "@+id/yourAnswer"
+        android:inputType="textNoSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize = "20dp"
+        android:hint = "@string/write_anything"
+        android:textColor="@color/colorPrimary"
+        />
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+    <Button
+        style="@style/newButton"
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorWhite"
+        android:onClick="goNext"
+        android:layout_marginRight="10dp"
+        android:stateListAnimator="@null"
+        android:text="@string/cancel"
+        android:textColor = "@color/colorWhiteSynonym"/>
+        <Button
+            style="@style/newButton"
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:onClick="goNext"
+            android:stateListAnimator="@null"
+            android:text="@string/add" />
+</LinearLayout>
+
+</LinearLayout>

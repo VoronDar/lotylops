@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragmentBack"
+    android:gravity="top"
+    tools:context="activities.testTranslate">
+
+    <com.google.android.material.card.MaterialCardView
+        style = "@style/cardM"
+        app:contentPadding="0dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="3dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorWhite">
+
+        <ScrollView
+            android:overScrollMode="never"
+            android:id = "@+id/testScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/testCommand"
+                    android:id="@+id/part"
+                    android:text="@string/test_command_select"/>
+                <TextView
+                    android:id="@+id/word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="70dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center"
+                    android:text="example"
+                    android:textColor="@color/colorWhiteTranslate"
+                    android:textSize="24sp" />
+                    <LinearLayout android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:padding = "20dp"
+                        android:weightSum="2"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id = "@+id/upperAnswer"
+                            android:layout_weight="1"
+                            android:paddingTop = "20dp"
+                            android:paddingBottom = "20dp"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:weightSum="2">
+
+                            <Button
+                                style="@style/buttonSelect"
+                                android:id = "@+id/firstAnswer"
+                                android:textColor="@color/colorDarkBlueApp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:background="@color/colorWhite"
+                                android:text="first first first third third third third third third third first"/>
+                            <Button
+                                style="@style/buttonSelect"
+                                android:id = "@+id/secondAnswer"
+                                android:layout_width="0dp"
+                                android:textColor="@color/colorDarkBlueApp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:text="second"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id = "@+id/lowerAnswer"
+                            android:paddingTop = "20dp"
+                            android:visibility="gone"
+                            android:paddingBottom = "20dp"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:weightSum="2">
+
+                            <Button
+                                style="@style/buttonSelect"
+                                android:id = "@+id/thirdAnswer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorDarkBlueApp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:text="third third third third third third third third"/>
+
+                            <Button
+                                style="@style/buttonSelect"
+                                android:id = "@+id/fourthAnswer"
+                                android:layout_width="0dp"
+                                android:textColor="@color/colorDarkBlueApp"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@color/colorWhite"
+                                android:text="fourth"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding = "5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    style="@style/buttonSelect"
+                    android:id = "@+id/anotherThirdAnswer"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:textColor="@color/colorDarkBlueApp"
+                    android:visibility="gone"
+                    android:layout_height="100dp"
+                    android:background="@color/colorWhite"
+                    android:text="third"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                    <Button
+                        style="@style/newButton"
+                        android:id="@+id/skip"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:background="@color/colorWhite"
+                        android:stateListAnimator="@null"
+                        android:text="@string/skip" />
+                    <Button
+                        style="@style/newButton"
+                        android:id = "@id/next"
+                        android:clickable="false"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorBlueApp"
+                        android:stateListAnimator="@null"
+                        android:background="@color/colorWhite"
+                        android:text="@string/next"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

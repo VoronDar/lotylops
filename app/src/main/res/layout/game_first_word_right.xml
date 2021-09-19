@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id = "@+id/select_settings"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/game__upper"/>
+
+
+        <TextView
+            android:id = "@+id/taskName"
+            style="@style/gameTitle"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text = "@string/game_translate_right"
+            />
+
+        <TextView
+            android:id = "@+id/word_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#517DD2"
+            android:textSize="36dp"
+            android:fontFamily="@font/heebo_black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text = "Margin"
+            />
+<View
+    style="@style/divider"
+    />
+        <TextView
+            android:id = "@+id/word_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:fontFamily="@font/heebo_medium"
+            android:textColor="#517DD2"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:text = "выравнивание"
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/buttonMain"
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/n_no" />
+
+                <Button
+                    style="@style/buttonMain"
+                    android:id="@+id/accept"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/y_yes"/>
+            </LinearLayout>
+            <TextView
+                android:id = "@+id/spacer"
+                android:layout_height="20dp"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

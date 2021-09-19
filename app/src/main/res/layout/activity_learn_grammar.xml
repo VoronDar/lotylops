@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    style = "@style/fragmentBack"
+    android:id = "@+id/parentLayout"
+    android:gravity="top"
+tools:context="activities.MainActivity">
+
+    <View
+        android:id = "@+id/progress_bar"
+        android:layout_width="123dp"
+        android:layout_height="10dp"
+        android:elevation="3dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+        <ScrollView
+            android:id="@+id/cardScroll"
+            android:layout_margin="8dp"
+            android:scrollbars = "none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/checkRemember"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                        <TextView
+                            style="@style/textWord"
+                            android:layout_marginTop="60dp"
+                            android:textSize="30dp"
+                            android:id="@+id/theory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="теория"
+                            android:textColor="@color/colorWhiteTranslate"/>
+
+
+                <TextView
+                    android:id="@+id/theory_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Глагол to be дословно переводится на русский, как `быть, есть, являться` и в некоторых случаях как `находиться` и служит для обозначения состояния в настоящем, прошедшем и будущем временах. \nВ русском языке глагол `быть` в настоящем времеми часто опускается, и мы не часто говорим предложения вроде `я есть сонный`, `она есть здесь`, но в английском глагол to be не опускается никогда.\n Глагол to be изменяется по числам, лицам и временам. Глагол to be дословно переводится на русский, как `быть, есть, являться` и в некоторых случаях как `находиться` и служит Глагол to be дословно переводится на русский, как `быть, есть, являться` и в некоторых случаях как `находиться` и служит Глагол to be дословно переводится на русский, как `быть, есть, являться` и в некоторых случаях как `находиться` и служит"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:textColor="#5F6B83"
+                    android:textSize="24sp" />
+                    </LinearLayout>
+        </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/checkRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <Button
+            style = "@style/buttonSecond"
+            android:id = "@+id/buttonForget"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/no"/>
+
+        <Button
+            style = "@style/buttonMain"
+            android:id = "@+id/buttonRemember"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/yes"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

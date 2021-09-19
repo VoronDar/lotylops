@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="13dp"
+    android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:textColor="@color/colorDarkBlueApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft = "15dp"
+            android:textSize = "20sp"
+            android:text="слово" />
+
+    <EditText
+        android:id="@+id/value"
+        android:inputType=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDarkBlueApp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="@color/colorDarkBlueApp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="25sp" />
+    <ImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/divider" />
+
+
+</LinearLayout>

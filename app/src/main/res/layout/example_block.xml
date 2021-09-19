@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="4dp"
+    android:background="@color/colorWhite"
+    android:elevation="4dp"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/divider" />
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textBlockText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhiteTranslate"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="32dp"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:textSize = "24sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="rarara" />
+
+        <ImageView
+            android:id="@+id/playSound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:paddingLeft = "10dp"
+            android:paddingRight = "10dp"
+            android:paddingBottom="10dp"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/playsoundtest" />
+
+    </LinearLayout>
+
+</LinearLayout>

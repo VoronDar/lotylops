@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:id="@+id/select_settings">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/back_thing3"
+        />
+    <include layout="@layout/upper"
+        android:id = "@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:padding = "20dp"
+            android:visibility="visible"
+            android:gravity = "center">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            android:gravity = "center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id = "@+id/setting_block_one"
+                app:cardCornerRadius="10dp"
+                android:layout_height="match_parent"
+                app:cardElevation="1dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#B7C5DF"
+                app:rippleColor="#C1D6FF"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/colorWhite">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.constraintlayout.widget.Guideline
+                    android:id = "@+id/leftGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.55"
+                    />
+                <androidx.constraintlayout.widget.Guideline
+                    android:id = "@+id/topGuideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.55"
+                    />
+                <View
+                    android:id="@+id/indicator"
+                    app:layout_constraintStart_toStartOf="@id/leftGuideline"
+                    app:layout_constraintTop_toTopOf="@id/topGuideline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical|start"
+                    android:layout_gravity="end|bottom"
+                    android:layout_width="wrap_content"
+                    android:adjustViewBounds="false"
+                    android:visibility="gone"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/selected_indicator" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding = "10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center_vertical|left"
+                            android:padding="10dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="false"
+                            app:srcCompat="@drawable/icon_vocabular_audio"
+                            android:scaleType="fitCenter" />
+                        <TextView
+                            android:id="@+id/command"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:textSize = "16dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/heebo_bold"
+                            android:textColor="@color/colorBlack"
+                            android:text = "аудио"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+                </FrameLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id = "@+id/setting_block_two"
+                app:cardCornerRadius="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                app:cardElevation="1dp"
+                app:strokeWidth="1dp"
+                app:rippleColor="#C1D6FF"
+                app:strokeColor="#B7C5DF"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="@color/colorWhite">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id = "@+id/leftGuideline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.55"
+                        />
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id = "@+id/topGuideline2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.55"
+                        />
+
+                        <View
+                            android:id="@+id/indicator2"
+                            app:layout_constraintStart_toStartOf="@id/leftGuideline2"
+                            app:layout_constraintTop_toTopOf="@id/topGuideline2"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_height="0dp"
+                            android:gravity="center_vertical|start"
+                            android:layout_gravity="end|bottom"
+                            android:layout_width="wrap_content"
+                            android:adjustViewBounds="false"
+                            android:visibility="gone"
+                            android:cropToPadding="false"
+                            android:scaleType="fitCenter"
+                            android:background="@drawable/selected_indicator" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding = "10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center_vertical|left"
+                            android:padding="10dp"
+                            android:layout_gravity="left|center_vertical"
+                            android:adjustViewBounds="true"
+                            android:cropToPadding="false"
+                            app:srcCompat="@drawable/icon_vocabular_read"
+                            android:scaleType="fitCenter"/>
+                        <TextView
+                            android:id="@+id/command2"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:textSize = "16dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/heebo_bold"
+                            android:textColor="@color/colorBlack"
+                            android:text = "традиционный"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+                </FrameLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                app:layout_constraintBottom_toTopOf="@id/buttonHolder"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="120dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text=""
+                android:fontFamily="@font/heebo_regular"
+                android:textColor="#495979"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id = "@+id/buttonHolder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/buttonSecond"
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    android:visibility="gone"/>
+
+                <Button
+                    style="@style/buttonMain"
+                    android:id="@+id/buttonAccept"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/accept"/>
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

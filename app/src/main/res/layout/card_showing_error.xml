@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id = "@+id/errorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "30dp"
+        android:textColor="@color/colorAccent"
+        android:text = "@string/unexpected_error"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <TextView
+        android:id = "@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity = "center"
+        android:textSize = "25dp"
+        android:textColor="@color/colorWhiteMeaning"
+        android:text = "Карта - C1N3, отсутствует необходимое значение - перевод"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/divider" />
+    <TextView
+        android:id = "@+id/yourAnswer"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:textColor="@color/colorWhiteSynonym"
+        android:text = "@string/error_help_message"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+    <Button
+        style="@style/newButton"
+        android:id="@+id/next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:text="@string/skip" />
+            <Button
+                style="@style/newButton"
+                android:id="@+id/change"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:text="@string/fix_error" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

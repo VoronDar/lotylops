@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="SpUsage" xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="buttonGame">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="Items">
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorLightGrey</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+    <style name="fragmentName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name ="android:fontFamily">@font/heebo_black</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#BCCCED</item>
+    </style>
+
+
+    <style name="card_text_edit_holder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/buttonStroke</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+    <style name="testCommand">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">45dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">23dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">@color/colorBlueApp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name ="android:fontFamily">sans-serif-light</item>
+    </style>
+
+
+    <style name="fragmentBack">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:weightSum">10</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="newButton" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">14dp</item>
+        <item name="rippleColor">@color/colorBlueAlphaApp</item>
+        <item name="strokeColor">@color/colorBlueApp</item>
+        <item name="android:textColor">@color/colorBlueApp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+
+    <style name="mainButton" parent="@style/Widget.MaterialComponents.Button">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorBlueApp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="rippleColor">@color/colorBlueAlphaApp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+
+    <style name="buttonSelect" parent="@style/Widget.MaterialComponents.Button.TextButton">
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">18dp</item>
+        <item name="rippleColor">@color/colorBlueAlphaApp</item>
+        <item name="android:textColor">@color/colorBlueApp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+
+    <style name="buttonGameNew" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">48dp</item>
+        <item name="rippleColor">@color/colorBlueAlphaApp</item>
+        <item name="strokeColor">@color/colorBlueApp</item>
+        <item name="android:textColor">@color/colorBlueApp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="buttonGameNewNew">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/button_game_background</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/heebo_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="gameTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:fontFamily">@font/heebo_black</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="cardM" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="strokeColor">@color/colorBlueAlphaApp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+
+
+    <style name="buttonMain">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_rounded_background</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:fontFamily">@font/heebo_medium</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="buttonSecond">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">@drawable/button_outlined_background</item>
+        <item name="android:textColor">#426BBC</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:fontFamily">@font/heebo_black</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="buttonSelectNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">@drawable/button_select_background</item>
+        <item name="android:textColor">#496AA9</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+
+
+    <style name="textWord">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginBottom">45dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36dp</item>
+        <item name="android:fontFamily">@font/heebo_black</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="textGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/heebo_regular</item>
+        <item name="android:textColor">@color/textGroup</item>
+    </style>
+
+    <style name="selectHolder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">@color/buttonBackground</item>
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+
+
+    <style name="edit_text_settings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">16dp</item>
+
+        <item name="android:fontFamily">@font/heebo_medium</item>
+        <item name="android:paddingTop">22dp</item>
+        <item name="android:textColor">#34589E</item>
+        <item name="android:paddingBottom">22dp</item>
+        <item name="android:textColorHint">@color/textTrainInner</item>
+        <item name="android:background">@color/textTrainInnerBack</item>
+        <item name="android:inputType">textVisiblePassword|textNoSuggestions|textCapSentences|textImeMultiLine</item>
+    </style>
+
+    <style name="textTrainTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:fontFamily">@font/heebo_bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="textTrainWord">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:fontFamily">@font/heebo_bold</item>
+        <item name="android:textColor">@color/textTrain</item>
+    </style>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragmentBack"
+    android:gravity="top"
+    tools:context="activities.testTranslate">
+
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:scrollbars = "none"
+        android:id = "@+id/testScroll"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/checkRemember"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <TextView
+                    style = "@style/textTrainTitle"
+                    android:id="@+id/part"
+                    android:text="@string/write_the_word"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id = "@+id/first_place"
+                    style="@style/card_text_edit_holder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toBottomOf="@id/word">
+                    <TextView
+                        style="@style/edit_text_settings"
+                        android:layout_width="match_parent"
+                        android:hint="Введите слово"
+                        android:id = "@+id/editText" />
+
+                </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    android:id="@+id/soundButton"
+                    android:layout_width="40dp"
+                    android:visibility="visible"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/playsoundtest" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/blocks"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity = "center"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/checkRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <Button
+            style = "@style/buttonSecond"
+            android:id = "@+id/skip"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/skip"/>
+        <Button
+            style = "@style/buttonMain"
+            android:id = "@+id/check"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/check"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id = "@+id/progress_bar"
+        android:layout_width="123dp"
+        android:layout_height="10dp"
+        android:elevation="3dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

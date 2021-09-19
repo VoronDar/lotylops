@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id = "@+id/info_card_layout"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginBottom="13dp"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/heebo_medium"
+            android:layout_gravity="center_vertical"
+            android:paddingRight = "20dp"
+            android:paddingLeft = "15dp"
+            android:textColor="#324E84"
+            android:textSize="18sp"
+            android:text="слово"
+            android:paddingEnd="20dp"
+            android:paddingStart="15dp" />
+
+        <View
+            android:id="@+id/helpView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:adjustViewBounds="true"
+            android:gravity="end|top"
+            android:background="@drawable/help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp">
+    <EditText
+        android:id="@+id/value"
+        android:inputType=""
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#0E3581"
+        android:textColorHint="@color/colorDarkBlueApp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="80dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="80dp"
+        android:paddingEnd="20dp" />
+        <LinearLayout
+            android:id = "@+id/add_block"
+            android:layout_width="25dp"
+            android:orientation="vertical"
+            android:gravity="end|top"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+        <View
+            android:id="@+id/addNew"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:adjustViewBounds="true"
+            android:background="@drawable/add_sentence" />
+        <View
+            android:id="@+id/delSentence"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:adjustViewBounds="true"
+            android:background="@drawable/del_sentence" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        style="@style/divider"
+        app:layout_constraintTop_toBottomOf="@id/cards"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</LinearLayout>

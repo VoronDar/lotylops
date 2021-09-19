@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id = "@+id/select_settings"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding = "10dp"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0"
+            android:layout_marginBottom="32dp"
+            android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="top"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:background="@color/colorLightGrey"
+                />
+            <LinearLayout
+                android:id = "@+id/his_healh_holder"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+        <View
+            android:id = "@+id/his__healf"
+            android:layout_height="20dp"
+            android:layout_width="0dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/slider_today"
+            /></LinearLayout>
+        </FrameLayout>
+            <ImageView
+                android:id = "@+id/gamerImage"
+                android:layout_height="80dp"
+                android:layout_width="80dp"
+                android:src = "@drawable/gamer2"
+                android:layout_gravity="top"
+                />
+        </FrameLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/cardM"
+            android:id = "@+id/youWin"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_weight = "4"
+            android:layout_margin="5dp"
+            app:contentPadding="0dp"
+            app:cardCornerRadius="20dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:layout_height = "match_parent"
+                >
+
+                <TextView
+                    android:id = "@+id/result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:fontFamily="@font/heebo_black"
+                    android:textColor="@color/colorWhite"
+                    android:text="ТЫ ПОБЕДИЛ"
+                    android:padding = "10dp"
+                    android:background = "@color/buttonBackground"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+
+                    <TextView
+                        android:id = "@+id/scores"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:textColor="@color/colorBlack"
+                        android:text="ты набрал\n 1000023 очков"
+                        android:layout_marginTop="10dp"
+                        android:padding = "20dp"
+                        android:textSize="24dp"
+                        android:gravity="center"
+                        android:weightSum="5"/>
+
+                <TextView
+                    android:id = "@+id/newRecord"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.9"
+                    android:fontFamily="@font/heebo_black"
+                    android:textColor="@color/colorBlueApp"
+                    android:text="ты поставил новый рекорд!"
+                    android:padding = "20dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:weightSum="5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="bottom"
+                    android:layout_height="match_parent">
+                    <Button
+                        style="@style/buttonSecond"
+                        android:id = "@+id/ok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="ок"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/his_win"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center">
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:id = "@+id/game_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="2"
+            android:visibility="visible"
+            android:layout_marginBottom="32dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center"
+            android:weightSum="5">
+            <Button
+                style = "@style/buttonGameNewNew"
+                android:id = "@+id/firstPlay"
+                android:text = "1"/>
+            <Button
+                android:id = "@+id/secondPlay"
+                style = "@style/buttonGameNewNew"
+                android:text = "2"/>
+            <Button
+                android:id = "@+id/thirdPlay"
+                style = "@style/buttonGameNewNew"
+                android:text = "3"/>
+            <Button
+                android:id = "@+id/fourthPlay"
+                style = "@style/buttonGameNewNew"
+                android:text = "4"/>
+            <Button
+                android:id = "@+id/fifthPlay"
+                style = "@style/buttonGameNewNew"
+                android:text = "5"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/buttonMain"
+            android:id = "@+id/completed"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="2"
+            android:textSize="24dp"
+            android:text = "Завершить ход"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id = "@+id/turnDone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:visibility = "gone"
+            android:layout_marginRight="16dp"
+            android:layout_weight="2"
+            app:contentPadding="10dp"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#ABC7FF"
+            app:cardBackgroundColor="@color/colorWhite"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:cardCornerRadius="10dp"
+                    app:contentPadding="10dp"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#ABC7FF"
+                    android:layout_weight="1"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                <ImageView
+                    android:id = "@+id/your_image"
+                    android:layout_height="match_parent"
+                    android:layout_width="80dp"
+                    android:src = "@drawable/player"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <ImageView
+                    android:id = "@+id/his_image"
+                    android:layout_height="match_parent"
+                    android:layout_width="80dp"
+                    android:src = "@drawable/gamer2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+                        <TextView
+                            android:id = "@+id/your_points"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:layout_height="match_parent"
+                            app:layout_constraintStart_toEndOf="@id/your_image"
+                            app:layout_constraintEnd_toStartOf="@id/turnDoneGuideline"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:textColor="@color/colorWhiteExample"
+                            android:text="30"
+                            android:textSize="20sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id = "@+id/his_points"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/heebo_medium"
+                            app:layout_constraintEnd_toStartOf="@id/his_image"
+                            app:layout_constraintStart_toStartOf="@id/turnDoneGuideline"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:textColor="@color/colorWhiteExample"
+                            android:text="30"
+                            android:textSize="20sp"
+                            android:gravity="center"/>
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/turnDoneGuideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:id = "@+id/buttonNext"
+                    style="@style/buttonSecond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Продолжить"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/your_win"
+            android:visibility = "visible"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:background="@color/colorLightGrey"
+                />
+            <LinearLayout
+                android:id = "@+id/your_healh_holder"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <View
+                android:id = "@+id/your__healf"
+                android:layout_height="20dp"
+                android:layout_width="0dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/slider_today"
+                />
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView
+            android:layout_height="80dp"
+            android:layout_width="80dp"
+            android:src = "@drawable/player"
+            android:layout_gravity="right"
+            />
+    </FrameLayout>
+        <TextView
+            android:layout_height="20dp"
+            android:layout_width="match_parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="20dp"
+                    android:text="сдаться"
+                    android:textColor="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/buttonAccept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:padding="20dp"
+                    android:text="пожаловаться"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+            <TextView
+                android:id = "@+id/spacer"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

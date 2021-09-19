@@ -1,0 +1,399 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="activities.MainActivity"
+    tools:ignore="SpUsage"
+    android:background="@color/colorWhite"
+    style="@style/fragmentBack">
+        <ScrollView
+            android:id="@+id/cardScroll"
+            android:overScrollMode="never"
+            android:scrollbars = "none"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/textGroup"
+                    android:id="@+id/part"
+                    android:layout_gravity = "center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Часть"
+                    android:fontFamily="@font/heebo_regular"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+                <TextView
+                    style="@style/textGroup"
+                    android:id="@+id/group"
+                    android:layout_gravity="center"
+                    android:text="Группа"
+                    android:fontFamily="@font/heebo_medium"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/part" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id = "@+id/wordHolder"
+                    android:layout_marginTop="110dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    style="@style/textWord"
+                    android:id="@+id/word"
+                    android:layout_marginBottom="0dp"
+                    android:text="Word"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhiteTranslate"/>
+
+                <ImageView
+                    android:id="@+id/sound"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/playsoundtest" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/memButton"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:visibility="visible"
+                    android:background="@drawable/button_mem"
+                    android:paddingTop = "10dp"
+                    android:paddingBottom = "10dp"
+                    android:paddingLeft = "10dp"
+                    android:paddingRight = "20dp"
+                    android:src="@drawable/ic_brain" />
+                <ImageView
+                    android:id="@+id/playSound"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_height="52dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_sound"
+                    android:paddingTop = "10dp"
+                    android:paddingBottom = "10dp"
+                    android:paddingLeft = "20dp"
+                    android:paddingRight = "10dp"
+                    android:src="@drawable/ic_volume"  />
+
+                <TextView
+                    style = "@style/textGroup"
+                    android:id="@+id/transcription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:textAlignment="center"
+                    app:layout_constraintTop_toBottomOf="@id/wordHolder"
+                    android:text="[pleasant]"
+                    android:textColor="@color/textTranscript"
+                    android:textSize="18dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/wordHolder"
+                    android:layout_height="match_parent">
+                    <LinearLayout android:orientation="vertical"
+                        android:id = "@+id/theory_place"
+                        android:padding = "5dp"
+                        android:layout_marginTop="90dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/translate"
+                            android:text="Слово"
+                            android:textAlignment="center"
+                            android:layout_marginBottom="20dp"
+                            android:textSize="28dp"
+                            android:textColor="@color/colorBlack"
+                            android:gravity="center_horizontal" />
+
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/meaning"
+                            android:text="bla bla bla bla bla bla bla bla bla bla"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:fontFamily="@font/heebo_regular"
+                            android:textColor="@color/colorBlack"
+                            android:gravity="center_horizontal" />
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/meaningMative"
+                            android:text="bla bla bla bla bla bla bla bla bla bla"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:visibility="gone"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:fontFamily="@font/heebo_regular"
+                            android:textColor="@color/colorBlack"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:id="@+id/mean_divider"
+                            style="@style/divider"
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/help"
+                            android:text="someexample someexample"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:visibility="gone"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:fontFamily="@font/heebo_bold"
+                            android:textColor="#305EA3"
+                            android:gravity="center_horizontal" />
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/association"
+                            android:text="an"
+                            android:visibility="gone"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:textColor="#4EACD3"
+                            android:gravity="center_horizontal" />
+
+                        <View
+                            android:id="@+id/help_divider"
+                            style="@style/divider"
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            android:id="@+id/synonyms"
+                            style="@style/textWord"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="45dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="45dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:gravity="center_horizontal"
+                            android:text="syn"
+                            android:textAlignment="center"
+                            android:textColor="#14325F"
+                            android:textSize="22dp" />
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/antonyms"
+                            android:text="an"
+                            android:textAlignment="center"
+                            android:visibility="gone"
+                            android:textSize="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:textColor="#14325F"
+                            android:gravity="center_horizontal" />
+                        <View
+                            android:id="@+id/syn_divider"
+                            style="@style/divider"
+                            android:visibility="gone"
+                            />
+
+
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/example"
+                            android:text="someexample someexample"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/heebo_medium"
+                            android:layout_marginLeft="45dp"
+                            android:layout_marginRight="45dp"
+                            android:visibility="gone"
+                            android:textColor="#305EA3"
+                            android:gravity="center_horizontal" />
+                        <TextView
+                            style="@style/textWord"
+                            android:id="@+id/exampleTranslate"
+                            android:text="someexample someexample"
+                            android:textAlignment="center"
+                            android:textSize="22dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="45dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="45dp"
+                            android:fontFamily="@font/heebo_regular"
+                            android:textColor="#305EA3"
+                            android:gravity="center_horizontal" />
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            app:cardBackgroundColor="@color/colorBlueApp"
+                            app:cardCornerRadius="10dp">
+
+                            <Button
+                                android:id="@+id/add_linked"
+                                style="?android:attr/borderlessButtonStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:textSize="16dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorWhite"/>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id = "@+id/checkRemember"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:weightSum="2">
+
+                            <Button
+                                style = "@style/buttonSecond"
+                                android:id = "@+id/buttonForget"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:text="@string/no"/>
+
+                            <Button
+                                style = "@style/buttonMain"
+                                android:id = "@+id/buttonRemember"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                android:text="@string/yes"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/closetThing"
+                        android:layout_height="match_parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_height="wrap_content">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="80dp"
+                                android:background="@drawable/card_closer"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <TextView
+                            android:id="@+id/open"
+                            android:layout_marginTop="180dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/heebo_medium"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:gravity="center"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:text="Попытайтесь вспомнить что значит это слово и нажмите, чтобы проверить себя"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="24sp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+    <View
+        android:id="@+id/cardSupport"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardScroll" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorWhite"
+        android:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id = "@+id/progress_bar"
+        android:layout_width="123dp"
+        android:layout_height="10dp"
+        android:elevation="3dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

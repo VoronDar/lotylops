@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragmentBack"
+    android:gravity="top"
+    >
+
+    <ScrollView
+        android:id="@+id/testScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/checkRemember"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="28dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="14">
+
+            <TextView
+                android:id="@+id/part"
+                style="@style/textTrainTitle"
+                android:text="@string/write_the_word" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/word"
+                style="@style/textTrainWord"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="36dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/meaning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/heebo_medium"
+                android:gravity="center"
+                android:textColor="#5C89E1"
+                android:textSize="24dp"
+                android:visibility="gone" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/first_place"
+                style="@style/card_text_edit_holder"
+                android:layout_width="match_parent"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@id/word">
+
+                <TextView
+                    android:id="@+id/editText"
+                    style="@style/edit_text_settings"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:hint="Введите слово"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/letterBlocks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/checkRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <Button
+            style = "@style/buttonSecond"
+            android:id = "@+id/skip"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/skip"/>
+        <Button
+            style = "@style/buttonMain"
+            android:id = "@+id/check"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/next"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id = "@+id/progress_bar"
+        android:layout_width="123dp"
+        android:layout_height="10dp"
+        android:elevation="3dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

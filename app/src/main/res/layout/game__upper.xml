@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="90dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/slider_back"
+                />
+            <LinearLayout
+                android:id = "@+id/timerLayout"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <View
+                    android:id = "@+id/timer"
+                    android:layout_height="20dp"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/slider_today"
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:src = "@drawable/player"
+                android:layout_gravity="top|left"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id = "@+id/score"
+                    android:layout_height="80dp"
+                    android:background="@drawable/game_score_info"
+                    android:layout_width="80dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingStart="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

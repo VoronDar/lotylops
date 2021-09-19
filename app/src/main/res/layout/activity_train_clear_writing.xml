@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/fragmentBack"
+    android:gravity="top"
+    >
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style = "@style/textTrainTitle"
+                    android:id="@+id/part"
+                    android:text="@string/test_comand_clear_write"/>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+                <TextView
+                    style = "@style/textTrainWord"
+                    android:id="@+id/word"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:textSize="36dp"
+                    android:text="example" />
+                <TextView
+                    android:id="@+id/meaningNO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="center"
+                    android:textColor="#5C89E1"
+                    android:textSize="24dp"
+                    android:visibility="gone" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity = "center"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/soundPlay"
+                        android:layout_width="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/playsoundtest" />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id = "@+id/first_place"
+                    style="@style/card_text_edit_holder"
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toBottomOf="@id/word"
+                    android:layout_marginTop="50dp">
+
+                    <EditText
+                        style="@style/edit_text_settings"
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:hint="Введите слово"
+                        android:id = "@+id/answer"
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id = "@+id/checkRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:weightSum="2">
+
+        <Button
+            style = "@style/buttonSecond"
+            android:id = "@+id/skip"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/skip"/>
+
+        <Button
+            style = "@style/buttonMain"
+            android:id = "@+id/next"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/next"/>
+        <Button
+            style = "@style/buttonMain"
+            android:id = "@+id/check"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/check"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+        android:id = "@+id/progress_bar"
+        android:layout_width="123dp"
+        android:layout_height="10dp"
+        android:elevation="3dp"
+        android:background="@color/buttonBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

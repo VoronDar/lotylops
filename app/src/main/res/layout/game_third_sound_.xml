@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/game__upper"/>
+
+
+        <TextView
+            android:id = "@+id/command"
+            style="@style/gameTitle"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text = "@string/game_write_word"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:id = "@+id/first_place"
+            style="@style/card_text_edit_holder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:layout_constraintTop_toBottomOf="@id/word">
+
+            <EditText
+                style="@style/edit_text_settings"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:hint="Введите слово"
+                android:id = "@+id/editText"
+                android:importantForAutofill="no" />
+
+        </com.google.android.material.card.MaterialCardView>
+        <ImageView
+            android:id="@+id/soundButton"
+            android:layout_width="40dp"
+            android:visibility="visible"
+            android:layout_marginRight="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/playsoundtest" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <include layout="@layout/game__down"/>
+        </LinearLayout>

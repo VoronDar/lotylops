@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id = "@+id/buttonLetter"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_width="wrap_content"
+        android:text="W"
+        android:gravity="center"
+        android:background="@drawable/button_rounded_background"
+        android:minWidth="35dp"
+        android:paddingTop = "10dp"
+        android:paddingBottom = "10dp"
+        android:paddingLeft = "10dp"
+        android:paddingRight = "10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize = "20sp">
+    </TextView>

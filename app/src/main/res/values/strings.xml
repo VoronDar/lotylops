@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">LotyLops</string>
+    <string name="meaning">defenition</string>
+    <string name="translate">translate</string>
+    <string name="tip">tip</string>
+    <string name="mem">association</string>
+    <string name="synonym">synonym</string>
+    <string name="antonym">antonym</string>
+    <string name="openCard">open</string>
+    <string name="command_translate_word">translate the word</string>
+    <string name="write_the_word">write the word</string>
+    <string name="wrong_answer">wrong</string>
+    <string name="select_test_only_problems">Repeat only problem cards which were be repeating today</string>
+    <string name="select_test_only_next_level">Prepare for the next test cards which were be repeating today</string>
+    <string name="select_test_all_course">Repeat all course</string>
+    <string name="select_test_pass_exam">Pass exam and check your preparing</string>
+    <string name="select_test_all_today_cards">Repeat only cards which were be repeating today</string>
+    <string name="write_the_sentence">write the sentence</string>
+    <string name="your_day_plan">Your daily study plan:</string>
+    <string name="you_completed_the_daily_plan">You completed your daily plan</string>
+    <string name="chose_practice_type">chose exercise</string>
+    <string name="warning_you_need_to_complete_the_daily_plan">You have to complete your daily study plan to do extra exercises</string>
+    <string name="library">cards:</string>
+    <string name="there_is_no_practice">You can not do extra exercise today</string>
+    <string name="no">I forget</string>
+    <string name="yes">I remember</string>>
+    <string name="noKnow">I do not know</string>
+    <string name="yesKnow">I know</string>
+    <string name="next">next</string>
+    <string name="skip">skip</string>
+    <string name="check">check</string>
+    <string name="variant">extra variant</string>
+
+    <string name="PracticecTranslate">translate</string>
+    <string name="PracticecTranslateNative">using</string>
+    <string name="PracticecAudio">listening</string>
+    <string name="PracticecWriting">writing</string>
+    <string name="PracticecSentence">sentence</string>
+    <string name="add_mem">add association</string>
+    <string name="cancel">cancel</string>
+    <string name="add">add</string>
+    <string name="write_anything">write something</string>
+    <string name="settings">settings</string>
+
+    <string name="VocabularyApproach">way to learn words</string>
+    <string name="VocabularyAudioAp">audio-linguistic</string>
+    <string name="VocabularyTraditionalAp">traditional</string>
+    <string name="VocabularyViewApproach">way to acquaint with words</string>
+    <string name="VocabularyTranslateViewAp">translate</string>
+    <string name="VocabularyMeaningViewAp">meaning</string>
+    <string name="DefenitionLanguage">language of definition</string>
+    <string name="LanguageNew">learning</string>
+    <string name="LanguageNative">native</string>
+    <string name="ExampleLanguage">language of example</string>
+
+
+    <string name="PhoneticsTheoryDescript">you will learn the theory</string>
+    <string name="PhoneticsSimpleDescript">you will not learn the theory</string>
+    <string name="PhoneticsTheoryName">deduction</string>
+    <string name="PhoneticsSimpleName">transduction</string>
+
+    <string name="VocabularyAudioApDescript">first you will learn listen and speak</string>
+    <string name="VocabularyTraditionalApDescript">first you will learn read and write</string>
+    <string name="VocabularyTranslateViewApDescript">you will learn new words using mostly translations into your native language</string>
+    <string name="VocabularyMeaningViewApDescript">you will learn new words using mostly defenitions and pictures</string>
+    <string name="VocabularyBothViewApDescript">you will learn new words using defenitions and pictures and translations into your native language</string>
+    <string name="DefenitionLanguageNewDescript">definitions will show in your learning language</string>
+    <string name="DefenitionLanguageNativeDescript">definitions will show in your native language</string>
+    <string name="DefenitionLanguageBothDescript">definitions will show in your native and in your learning languages</string>
+    <string name="ExampleLanguageNewDescript">examples will show in your learning language</string>
+    <string name="ExampleLanguageNativeDescript">examples will show in your native language</string>
+    <string name="ExampleLanguageBothDescript">examples will show in your native and in your learning languages</string>
+    <string name="ExampleLanguageNoneDescript">examples will not showed</string>
+    <string name="accept">accept</string>
+
+    <string name="section_voc">vocabulary</string>
+    <string name="section_phr">phraseology</string>
+
+    <string name="stat_skip_learning">You have to repeat so much today. It is reasonable to not learn anything today in the section</string>
+    <string name="unexpected_error">error</string>
+    <string name="no_translate_meaning">There is no translate and meaning</string>
+    <string name="unknown_error">accident showing error</string>
+    <string name="error_help_message">You can skip the card or fix this error</string>
+    <string name="fix_error">fix</string>
+    <string name="there_is_no_value">", there is no required value - "</string>
+    <string name="card">"Card - "</string>
+    <string name="VocabularyCardCountPerDay">the velocity of words learning</string>
+    <string name="PhraseologyCardCountPerDay">the velocity of phrases learning</string>
+    <string name="ExceptionsCardCountPerDay">the velocity of exceptions learning</string>
+    <string name="CultureCardCountPerDay">the velocity of culture learning</string>
+    <string name="PhoneticsCardCountPerDay">the velocity of sounds learning</string>
+
+    <string name="paceNever">This value is inadmissible</string>
+    <string name="paceToSmall">This pace too slow. You can study faster</string>
+    <string name="paceNormal">This pace is optimal</string>
+    <string name="paceHigh">This pace is quite high</string>
+    <string name="paceReallyHigh">This pace is too high. Are you sure you can study every day at this pace?</string>
+    <string name="paceWord" translatable="false">word</string>
+    <string name="paceWords" translatable="false">words</string>
+    <string name="pacePhrase" translatable="false">phrase</string>
+    <string name="pacePhrases" translatable="false">phrases</string>
+    <string name="paceWordsRuOne" translatable="false">слово</string>
+    <string name="paceWordsRuSeveral" translatable="false">слова</string>
+    <string name="paceWordsRuMuch" translatable="false">слов</string>
+    <string name="pacePhrasesRuOne" translatable="false">фраза</string>
+    <string name="pacePhrasesRuSeveral" translatable="false">фразы</string>
+    <string name="pacePhrasesRuMuch" translatable="false">фраз</string>
+    <string name="paceYouCanLearn">you can learn</string>
+    <string name="pacePerWeek">per week,</string>
+    <string name="pacePerMonth">per month,</string>
+    <string name="pacePerYear">per year</string>
+
+
+    <string name="word">word</string>
+    <string name="meaningLearn">definition, learning language</string>
+    <string name="meaningNative">definition, native language</string>
+    <string name="exampleNative">example, native language</string>
+    <string name="exampleLearn">example, learning language</string>
+    <string name="transcription">transcription</string>
+    <string name="part">part of speech</string>
+    <string name="group">group of word</string>
+    <string name="help">word`s using</string>
+    <string name="exampleTrainNative">train sentence, native language</string>
+    <string name="exampleTrainLearn">train sentence, learning language</string>
+
+
+    <string name="wordPrev" translatable="false">capable</string>
+    <string name="meaningLearnPrev" translatable="false">able to do something qualitatively</string>
+    <string name="meaningNativePrev" translatable="false">способный делать что-либо качественно</string>
+    <string name="exampleNativePrev" translatable="false">He is a very capable employee</string>
+    <string name="exampleLearnPrev" translatable="false">Он очень способный работник</string>
+    <string name="transcriptionPrev" translatable="false">ˈkeɪ.pə.bəl</string>
+    <string name="partPrev" translatable="false">adjective</string>
+    <string name="groupPrev">insert here group of word</string>
+    <string name="synonymPrev" translatable="false">able</string>
+    <string name="antonymPrev" translatable="false">incapable</string>
+    <string name="translatePrev" translatable="false">способный</string>
+    <string name="memPrev">insert here your association</string>
+    <string name="helpPrev">\'capable\' is used in cases where you need to show that a person has skills and experience to do that right, but \'able\' indicate on the possibility to do something.</string>
+    <string name="exampleTrainNativePrev">put there translate of the sentence</string>
+    <string name="exampleTrainLearnPrev">put there sentence to train use the word</string>
+    <string name="invalid_data">invalid data</string>
+    <string name="you_ought_to_fill">"you ought to fill the field "</string>
+    <string name="or">" or "</string>
+    <string name="and">" and "</string>
+    <string name="add_new_card">Add new card</string>
+    <string name="change_card">Change card</string>
+    <string name="groupInfo">Context of using word. Is that word oldfashioned, informal?</string>
+    <string name="helpInfo">Features of using words, like prepositions, the distinction between synonyms</string>
+    <string name="memInfo">The association that can help you remember the word</string>
+    <string name="partInfo">Part of speech. If you do not specify anything, then the word will be considered as a noun</string>
+    <string name="trainInfo">A sentence that you will train to write. It is necessary to learn how to use the word.</string>
+    <string name="trainNativeInfo">Translation of the sentence you will train to write</string>
+    <string name="permission_blocked">The permission wasn\'t granted</string>
+    <string name="empty_file">The error while reading occurred</string>
+    <string name="read_file_error">file cannot be read -</string>
+    <string name="select_file_error">Select file error</string>
+    <string name="cources_get_failed">failed to get information about the courses</string>
+    <string name="cources">cources</string>
+    <string name="course_active">active</string>
+    <string name="course_enabled">enabled</string>
+    <string name="course_disabled">disabled</string>
+    <string name="vocabulary">vocabulary</string>
+    <string name="grammar">grammar</string>
+    <string name="phraseology">phraseology</string>
+    <string name="exceptions">exceptions</string>
+    <string name="phonetics">phonetics</string>
+    <string name="culture">culture</string>
+    <string name="GrammarVelocity">the velocity of rules learning</string>
+    <string name="GrammarApproach">way to learn rules</string>
+    <string name="PhoneticsApproach">way to learn phonetics</string>
+    <string name="GrammarDeductionDesc">you will practice grammar rules while learning the theory</string>
+    <string name="GrammarTransductionDesc">you will practice grammar rules without learning the theory</string>
+    <string name="GrammarInductionDesc">Practice first - then theory</string>
+    <string name="GrammarDeduction">Deduction (Traditional)</string>
+    <string name="GrammarInduction">Induction</string>
+    <string name="GrammarTransduction">Transduction</string>
+    <string name="frequency">frequency of repetition</string>
+    <string name="frequency_excpo_descript">frequency of repetition will be increase quicker</string>
+    <string name="frequency_linear_descript">frequency of repetition will be increase slower</string>
+    <string name="grammar_padeg">rules</string>
+    <string name="vocabulary_padeg">words</string>
+    <string name="phraseology_padeg">phrases</string>
+    <string name="culture_padeg">culture</string>
+    <string name="phonetics_padeg">phonetics rules</string>
+    <string name="exception_padeg">exceptions</string>
+    <string name="frequency_expo">exponential</string>
+    <string name="frequency_linear">linear</string>
+
+    <string name="help_library">Выбери, что изучать</string>
+    <string name="help_day_plan">Занимайся</string>
+    <string name="help_pool">Практикуйся дополнительно</string>
+    <string name="help_settings">Настраивай систему под себя</string>
+    <string name="help_play">Играй</string>
+    <string name="help_load_card">Помоги сообществу, поделись картой</string>
+    <string name="help_study">Начни свое обучение</string>
+    <string name="help_repeat">Повтори материал</string>
+    <string name="help_open_card">Попытайся вспомнить слово и открой карту</string>
+    <string name="help_forget">Нажми, если забыл слово</string>
+    <string name="help_remember">Нажмите, если знаете слово</string>
+    <string name="button_practice_more">practice more</string>
+    <string name="test_comand_clear_write">write the word correctly</string>
+    <string name="hint_write_text">введите текст</string>
+    <string name="test_command_select">select the right spelling</string>
+    <string name="test_command_sound_select">select the right spelling</string>
+    <string name="load_course_title">The course will be loaded</string>
+    <string name="load_course_error_message">The course will be loaded. The internet connection is required.</string>
+    <string name="fragment_title_add_card">Add a card</string>
+    <string name="fragment_descr_add_card">Add your words and learn them</string>
+    <string name="fragment_name_courses">Courses for learning</string>
+    <string name="fragment_name_play">Play</string>
+    <string name="fragment_desrc_play">Select your opponent</string>
+    <string name="library_learn_colode">learn the course</string>
+    <string name="library_add_card">add a card</string>
+    <string name="library_load_card">load a card</string>
+    <string name="fragment_desrc_pool">What do you want to practice?</string>
+    <string name="fragment_desrc_pool_select">What do you want to practice?</string>
+    <string name="leaen_pace">the pace of learning</string>
+    <string name="stat_forgotten">Forgotten cards</string>
+    <string name="stat_remembered">Remebered cards</string>
+    <string name="stat_worked">Days you were studying</string>
+    <string name="stat_skipped">Days you skipped</string>
+    <string name="game_make_sentence">Make the sentence</string>
+    <string name="game_wrong">wrong</string>
+    <string name="start_help_title">Set your study proccess with our help</string>
+    <string name="button_later">later</string>
+    <string name="button_set">set</string>
+    <string name="fragment_desrc_select_section">Select sections to learn them</string>
+    <string name="stat_repeated">Repeated cards</string>
+    <string name="game_right">right</string>
+    <string name="game_write_word">Write the word correctly</string>
+    <string name="game_translate_right">Is the translation right?</string>
+    <string name="fragment_name_stat">Statistics</string>
+    <string name="fragment_name_settings">Settings</string>
+    <string name="fragment_name_sections">Sections</string>
+    <string name="fragment_name_pool_select">Extra repeating</string>
+    <string name="fragment_name_pool">Select a task</string>
+    <string name="fragment_name_library">Cards for learning</string>
+    <string name="fragment_desrc_stat">The last week of the study</string>
+    <string name="fragment_desrc_settings">Settings of learning</string>
+    <string name="start_setting_text">getting the information</string>
+    <string name="settings_title_vocabulary_approach">Why do you want to learn English?</string>
+    <string name="settings_start_desc_audio">You want to learn to speak and listen</string>
+    <string name="settings_start_desrc_text">You don\'t want to learn to speak</string>
+    <string name="settings_start_desc_deduction">You can easily remember rules and use them</string>
+    <string name="fragment_title_start_vocabulary">Click the words you know</string>
+    <string name="fragment_desrc_start_vocabulary">Do you want to learn words?</string>
+    <string name="fragment_title_start_phraseology">Click the phrases you know</string>
+    <string name="fragment_desrc_start_phraseology">Do you want to learn phrases?</string>
+    <string name="fragment_title_start_grammar">Select the right translation</string>
+    <string name="fragment_desrc_start_grammar">Do you want to learn grammar?</string>
+    <string name="fragment_desrc_start_phonetics">Do you want to learn to speak correctly?</string>
+    <string name="n_no">no</string>
+    <string name="test_desrc">Select the most interesting</string>
+    <string name="test_title">There are courses for you</string>
+    <string name="fragment_name_time">The learning time</string>
+    <string name="fragment_desrc_time">How much do you want to study?</string>
+    <string name="y_yes">yes</string>
+    <string name="start_setting_transdiction">intuition</string>
+    <string name="start_setting_deduciton">rules</string>
+    <string name="start_setting_audio">conversations</string>
+    <string name="settings_title_grammar_approach">How do you like to learn?</string>
+    <string name="settings_start_desc_transduction">You don\'t need rules to learn to speak correctly</string>
+    <string name="select_courses_help">Select the appropriate pace</string>
+    <string name="button_i_select_myself">later</string>
+    <string name="test_synonyms">Select synonyms</string>
+
+
+    <string name="ng_learn">Learn</string>
+    <string name="ng_library">Library</string>
+    <string name="ng_profile">Home</string>
+    <string name="ng_settings">Settings</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id = "@+id/select_settings"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include layout="@layout/game__upper"/>
+        <TextView
+            style="@style/gameTitle"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:text = "@string/game_make_sentence"/>
+
+            <ImageView
+                android:id="@+id/soundButton"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_margin="20dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/playsoundtest" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id = "@+id/first_place"
+            style="@style/card_text_edit_holder"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/word"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                style="@style/edit_text_settings"
+                android:layout_width="match_parent"
+                android:inputType="textEmailAddress"
+                android:hint="Введите слово"
+                android:enabled="false"
+                android:id = "@+id/editText"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id = "@+id/blocks"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:gravity = "center"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <include layout="@layout/game__down"/>
+        </LinearLayout>
+</androidx.cardview.widget.CardView>
